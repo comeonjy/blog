@@ -15,9 +15,9 @@ return [
     // +----------------------------------------------------------------------
 
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => false,
+    'app_trace'              => true,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -64,7 +64,7 @@ return [
     // 默认验证器
     'default_validate'       => '',
     // 默认的空控制器名
-    'empty_controller'       => 'Error',
+    'empty_controller'       => 'EmptyController',
     // 操作方法后缀
     'action_suffix'          => '',
     // 自动搜索控制器

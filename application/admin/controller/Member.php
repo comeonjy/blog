@@ -3,7 +3,7 @@ namespace app\admin\controller;
 
 use think\Controller;
 
-class Index extends Controller{
+class Member extends Controller{
     public function index(){
         return view();
     }
