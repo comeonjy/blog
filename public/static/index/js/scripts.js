@@ -97,8 +97,9 @@ jQuery.ias({
 	next: '.next-page a',
 	trigger: '查看更多',
 	loader: '<div class="pagination-loading"><img src="/static/index/images/loading.gif" /></div>',
-	triggerPageThreshold: 5,
-	onRenderComplete: function() {
+	triggerPageThreshold: 1000,
+	onRenderComplete: function(data) {
+		console.log(data);
 		$('.excerpt .thumb').lazyload({
 			placeholder: '../images/occupying.png',
 			threshold: 400

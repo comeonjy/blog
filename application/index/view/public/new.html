@@ -1,0 +1,13 @@
+<div class="widget widget_hot">
+    <h3>最新评论文章</h3>
+    <ul>
+        {foreach $new as $v}
+        <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#"><span class="thumbnail">
+				<img class="thumb" data-original="{$v.image}" src="{$v.image}" alt="用DTcms做一个独立博客网站（响应式模板）"
+                     style="display: block;">
+			</span><span class="text">{$v.title}</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
+				{$v.date}
+			</span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>{$v.view}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
